@@ -1,0 +1,24 @@
+<ul class="flex items-center justify-end">
+  <li class="ml-6 hidden lg:block">
+    <button class="search-toggle text-right text-primary text-md hover:text-orange transition-all" aria-label="icon-settings">
+      <i class="icon-magnifier"></i>
+    </button>
+  </li>
+  <li class="ml-6">
+    <a href="#offcanvas-cart" class="text-primary text-md hover:text-orange transition-all relative offcanvas-toggle">
+      <span class="w-5 h-5 bg-dark text-white text-sm rounded-full font-normal flex flex-wrap items-center justify-center absolute -top-3 left-2 leading-none">4</span>
+      <i class="icon-bag"></i>
+      <span class="text-base leading-none text-dark">$245</span>
+    </a>
+    <!-- @@include('offcanvas-cart/index.html') -->
+  </li>
+  <li id="toggle-menu" class="ml-6 hidden lg:block relative">
+    <button class="text-primary text-md hover:text-orange transition-all toggle-menu" aria-label="icon-settings">
+      <i class="icon-settings"></i>
+    </button>
+    @@include('settings/index.html')
+  </li>
+  <li class="ml-6 lg:hidden">
+    <a href="#offcanvas-mobile-menu" class="offcanvas-toggle text-primary text-md hover:text-orange transition-all"><i class="icon-menu"></i></a>
+  </li>
+</ul>
